@@ -1,0 +1,153 @@
+.home-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.logo-big {
+    max-width: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 176px;
+}
+
+.logo-small {
+    max-width: 150px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 150px;
+}
+
+//---------------Menu Icon
+.menu-icon {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    margin: auto;
+    z-index: 99;
+}
+
+#nav-icon3 {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 4px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+//------------Menus
+.menus-wrap {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background: #404040;
+    text-align: center;
+    height: 100%;
+    display: none;
+    transition: all 0.7s ease-in;
+}
+
+.menus-wrap.open {
+    display: block;
+}
+
+ul.menu {
+    list-style: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    a {
+        color: #fff;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:992px) {
+    .menu-icon {
+        top: 40px;
+        bottom: auto;
+        left: 0;
+        right: 0;
+    }
+    .logo-big {
+        display: none;
+    }
+    .logo-small {
+        right: 0;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+    }
+}

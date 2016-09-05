@@ -1,0 +1,15 @@
+{
+    "css": [
+        "src/assets/libs/scrollbar/jquery.scrollbar.css",
+        "src/assets/libs/font-awesome-4.6.3/css/font-awesome.css"
+    ],
+    "js": {
+        "main": [
+            "src/assets/libs/projectJs/main.js",
+            "src/assets/libs/projectJs/custom.js"
+        ],
+        "libs": [
+            "src/assets/libs/scrollbar/jquery.scrollbar.min.js"
+        ]
+    }
+}
