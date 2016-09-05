@@ -1,8 +1,4 @@
 /*Library css*/
-
-.ap {
-    width: 50%;
-    float: left;
-    height: 50px;
-    border: 5px solid red;
+.pagination {
+    background: #000;
 }

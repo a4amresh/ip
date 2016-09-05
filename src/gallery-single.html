@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ip</title>
+    <meta name="copyright" content="Copyright 2016">
+    <meta name="description" content="Description your website goes here">
+    <meta name="keywords" content="Website, psd to html, responsive website, meta, tag">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/ip.libs.css">
+    <link rel="stylesheet" href="assets/css/ip.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Main Wrapper-->
+    <div class="main-frame">
+        <div class="border border-top"></div>
+        <div class="border border-left"></div>
+        <!--Content Frame-->
+        <div class="frame">
+            <!--Gallery single-->
+            <div class="gallery-single" id="galleria">
+                <img src="assets/images/photographer.jpg">
+                <img src="assets/images/bride1.jpg" alt="">
+                <img src="assets/images/google-favicon-logo.png" alt="">
+            </div>
+            <!--Gallery single-->
+        </div>
+        <!--Content Frame-->
+        <div class="border border-right "></div>
+        <div class="border border-bottom "></div>
+    </div>
+    <!--Main Wrapper-->
+
+    <script>
+        if (typeof jQuery == "undefined ") {
+            document.write('<script src="assets/libs/jquery/jquery-3.1.0.min.js ">\x3Cscript>');
+        }
+    </script>
+    <script src="assets/libs/galleria/galleria-1.4.5.min.js"></script>
+    <script src="assets/js/ip.libs.js "></script>
+    <script src="assets/js/ip.js "></script>
+    <script>
+            //Load the classic theme
+            Galleria.loadTheme('assets/libs/galleria/themes/classic/galleria.classic.min.js');
+            // Initialize Galleria
+            Galleria.run('#galleria');
+            Galleria.ready(function() {
+                var gallery = this; // galleria is ready and the gallery is assigned
+                // $('.ap').click(function() {
+                // gallery.toggleFullscreen(); // toggles the fullscreen
+                // });
+            });
+    </script>
+</body>
+
+</html>

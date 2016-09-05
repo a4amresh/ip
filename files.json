@@ -9,9 +9,9 @@
             "src/assets/libs/projectJs/custom.js"
         ],
         "libs": [
-            "src/assets/libs/scrollbar/jquery.scrollbar.min.js",
-            "src/assets/libs/masonry/imagesloaded.pkgd.min.js",
-            "src/assets/libs/masonry/masonry.pkgd.min.js"
+            "src/assets/libs/masonry/masonry.pkgd.min.js",
+             "src/assets/libs/masonry/imagesloaded.pkgd.min.js",
+             "src/assets/libs/scrollbar/jquery.scrollbar.min.js"
         ]
     }
 }

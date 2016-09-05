@@ -25,17 +25,32 @@
             <div class="page-wrap gallery">
                 <div class="grid">
                     <div class="grid-sizer"></div>
-                    <div class="grid-item">
+                    <div class="grid-item effect-ming">
                         <img src="assets/images/google-favicon-logo.png" alt="">
+                        <div class="figcaption">
+							<h2>Dynamic <span>Jazz</span></h2>
+							<p>When Jazz starts to chase cars, the whole world stands still.</p>
+							<a href="gallery-single.html">View more</a>
+						</div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item effect-jazz">
                         <img src=" assets/images/photographer.jpg " alt=" ">
+                        <div class="figcaption">
+							<h2>Dynamic <span>Jazz</span></h2>
+							<p>When Jazz starts to chase cars, the whole world stands still.</p>
+							<a href="#">View more</a>
+						</div>
                     </div>
                     <div class="grid-item">
                         <img src=" assets/images/Logo_2013_Google.png " alt=" ">
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item effect-ming">
                         <img src=" assets/images/photographer.jpg " alt=" ">
+                        <div class="figcaption">
+							<h2>Dynamic <span>Jazz</span></h2>
+							<p>When Jazz starts to chase cars, the whole world stands still.</p>
+							<a href="#">View more</a>
+						</div>
                     </div>
                     <div class="grid-item">
                         <img src=" assets/images/photographer.jpg " alt=" ">
@@ -45,6 +60,9 @@
                     </div>
                     <div class="grid-item">
                         <img src=" assets/images/bride1.jpg " alt=" ">
+                    </div>
+                    <div class="grid-item">
+                        <img src=" assets/images/photographer.jpg " alt=" ">
                     </div>
                 </div>
             </div>
@@ -63,6 +81,16 @@
     </script>
     <script src="assets/js/ip.libs.js "></script>
     <script src="assets/js/ip.js "></script>
+    <script>
+        imagesLoaded('.grid', function() {
+            // init Isotope after all images have loaded
+            var msnry = new Masonry('.grid', {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
+    </script>
 </body>
 
 </html>
