@@ -111,28 +111,40 @@
 
 //------------Menus
 .menus-wrap {
+    padding-top: 80px;
     position: absolute;
-    width: 100%;
-    right: 0;
     background: #404040;
     text-align: center;
-    height: 100%;
-    display: none;
-    transition: all 0.7s ease-in;
+    transition: all 0.6s cubic-bezier(0.89, 0.27, 0.13, 0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10%;
+    height: 10%;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .menus-wrap.open {
-    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu {
     ul {
         list-style: none;
-        font-family: 'Open Sans Condensed', sans-serif;
     }
     a {
         color: #fff;
         font-size: 2.5em;
+        text-decoration:none;
+        line-height: 1.7em;
+        letter-spacing: 2.5px;
+        font-family: 'Tangerine', cursive;
     }
 }
 
@@ -140,7 +152,7 @@
     .menu-icon {
         top: 40px;
         bottom: auto;
-        left: 0;
+        left: 40px;
         right: 0;
     }
     .logo-big {

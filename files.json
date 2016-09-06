@@ -1,7 +1,8 @@
 {
     "css": [
         "src/assets/libs/scrollbar/jquery.scrollbar.css",
-        "src/assets/libs/font-awesome-4.6.3/css/font-awesome.css"
+        "src/assets/libs/font-awesome-4.6.3/css/font-awesome.css",
+        "src/assets/libs/animate/animate.min.css"
     ],
     "js": {
         "main": [
